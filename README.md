@@ -175,8 +175,6 @@ The calculations were performed to generate useful numerical information and pre
 ### Excel Functions Used
 
 The following Excel functions were used for calculations:
-
-```text
 COUNT()
 AVERAGE()
 MIN()
@@ -241,3 +239,152 @@ The main objective of the dashboard was to provide a **clear visual overview of 
 
 The final **Laptop Sales Dashboard** provides a simple and effective visual representation of the Amazon laptop dataset. It helps users quickly understand the **pricing, ratings, brand performance, and RAM distribution** of laptops.
 <img width="1121" height="687" alt="Screenshot 2026-08-20 070357" src="https://github.com/user-attachments/assets/f8c9f103-73cd-42c7-86a8-011405d63a12" />
+
+
+
+
+## 🔎 Step 4: Lookup Analysis
+
+In this step, **Lookup functions in Microsoft Excel** were used to retrieve specific laptop information and perform brand-wise analysis.
+
+The main purpose of Lookup Analysis was to quickly search for a laptop model or brand and retrieve its related product details.
+
+### Lookup Operations Performed
+
+- Used **VLOOKUP** to retrieve the price of a selected laptop model.
+- Used **XLOOKUP** to retrieve the rating of a selected laptop model.
+- Used a **Search Brand** field to retrieve specific laptop details.
+- Retrieved **RAM** information for the selected brand.
+- Retrieved **Operating System (OS)** information.
+- Retrieved **Screen Size** information.
+- Retrieved **Hard Disk Size** information.
+- Retrieved **CPU Model** information.
+- Calculated **Average Price** for each brand.
+- Calculated **Total Laptops** available for each brand.
+- Calculated **Average Rating** for each brand.
+- Analyzed **Total Ratings** for different brands.
+- Created a **Brand Metrics** chart to visually compare brand performance.
+
+### Excel Functions Used
+
+The following Excel Lookup and calculation functions were used:
+
+VLOOKUP()
+XLOOKUP()
+AVERAGE()
+COUNT()
+
+### Example Calculations
+
+**VLOOKUP – Retrieve Price:**
+
+=VLOOKUP(Model_Name,Table_Range,Column_Number,FALSE)
+
+**XLOOKUP – Retrieve Rating:**
+
+=XLOOKUP(Model_Name,Model_Range,Rating_Range)
+
+**Average Price by Brand:**
+
+=AVERAGE(Price_Range)
+
+**Total Laptops by Brand:**
+
+=COUNTIF(Brand_Range,Brand_Name)
+
+### Brand-wise Analysis
+
+The Lookup Analysis also provided brand-wise metrics such as:
+
+- Average Price
+- Total Number of Laptops
+- Average Rating
+- Total Ratings
+
+This helped to compare different laptop brands based on their pricing, availability, and customer ratings.
+
+### Product Information Retrieved
+
+For the selected brand/model, the following product information was retrieved:
+
+- Price
+- Rating
+- RAM
+- Operating System
+- Screen Size
+- Hard Disk Size
+- CPU Model
+
+### Objective
+
+The objective of Lookup Analysis was to make it easier to **search, retrieve, compare, and analyze laptop information based on model and brand**.
+
+### Result
+
+The Lookup Analysis successfully provided quick access to important laptop details and helped in performing **brand-wise comparison and analysis**. It made the dataset easier to explore and supported better understanding of **price, rating, RAM, operating system, screen size, storage, and CPU information**
+
+
+
+<img width="1656" height="746" alt="Screenshot 2026-08-20 071054" src="https://github.com/user-attachments/assets/c06a0f17-4fd3-4081-8b70-225e399bc5eb" />
+
+
+
+
+## ⚠️ Step 5: Data Validation & Error Log
+
+In this step, a **Data Validation & Cleaning Summary** was created in Microsoft Excel to check and track the quality of the cleaned Amazon laptop dataset.
+
+The Error Log was used to document the data quality checks, target columns, actions taken, and current status of each validation process.
+
+### Data Quality Checks Performed
+
+1. **Missing Price Validation**
+   - Target Column: `price`
+   - Action Taken: Automated tracking via Error_Log tab.
+   - Current Status: **No errors found (100% complete).**
+
+2. **Missing Rating Validation**
+   - Target Column: `rating`
+   - Action Taken: Automated tracking via Error_Log tab.
+   - Current Status: **No errors found (100% complete).**
+
+3. **Blank Value Removal**
+   - Target Column: `next_month_bought`
+   - Action Taken: Filtered and removed rows with missing data.
+   - Current Status: **Cleaned.**
+
+4. **Duplicate Row Removal**
+   - Target Column: All Columns
+   - Action Taken: Scanned and removed duplicate entries.
+   - Current Status: **Cleaned.**
+
+5. **Text Standardization**
+   - Target Columns: `brand`, `model_name`
+   - Action Taken: Removed extra spaces and standardized case.
+   - Current Status: **Cleaned.**
+
+6. **Data Type Formatting**
+   - Target Columns: `price`, `mrp`
+   - Action Taken: Converted to numeric currency formats.
+   - Current Status: **Cleaned.**
+
+### Error Log Purpose
+
+The Error Log was created to:
+
+- Track data quality issues.
+- Identify missing values.
+- Monitor the cleaning process.
+- Record the actions taken for each issue.
+- Verify the current status of data quality checks.
+
+### Objective
+
+The objective of the Error Log was to **systematically track data validation and cleaning activities** and ensure that the dataset was accurate, consistent, and ready for further analysis.
+
+### Result
+
+The Data Validation and Error Log process confirmed that the required data-quality checks were completed successfully. Missing price and rating validations showed **100% completeness**, while blank values, duplicate records, text formatting, and data type formatting were successfully cleaned.
+
+
+<img width="1754" height="316" alt="Screenshot 2026-08-20 071653" src="https://github.com/user-attachments/assets/75bffdbe-cf43-42e9-b217-89056d159ef5" />
