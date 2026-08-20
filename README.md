@@ -47,10 +47,6 @@ This project was completed using **Microsoft Excel** for data cleaning, preproce
 
 The project uses the following dataset:
 
-```text
-single_amazon_laptop_messy_dataset_1-10 (1).csv
-```
-
 The dataset contains Amazon laptop information such as:
 
 * Product Name
@@ -66,6 +62,9 @@ The dataset contains Amazon laptop information such as:
 * Graphics Card
 * Screen Size
 * Product Details
+
+
+
 ## 🧹 Step 1: Data Cleaning
 
 The first step of the project was to clean the raw Amazon laptop dataset in **Microsoft Excel**.
@@ -130,6 +129,7 @@ The original dataset contained messy, inconsistent, and incomplete data. Data cl
 * Excel Formatting
 
 ### Result
+The cleaned dataset became accurate, consistent, validated, and ready for calculations, Lookup Analysis, dashboard creation, and further data analysis.
 
 After completing the cleaning process, the dataset became **more structured, consistent, and suitable for analysis and dashboard creation**.
 <img width="1905" height="650" alt="Screenshot 2026-08-20 065328" src="https://github.com/user-attachments/assets/4dfeae11-a5c3-4bb5-af96-8b72b9d8f07a" />
